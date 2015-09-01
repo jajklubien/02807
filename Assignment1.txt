@@ -1,0 +1,5 @@
+Exercise 1
+
+Exercise 1.1 - Write a command that finds the 10 most popular words in a file
+
+tr -c '[:alnum:]' '[\n*]' < 101.txt | sort | uniq -c | sort -nr | head -10
